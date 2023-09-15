@@ -2,8 +2,14 @@ const progressBar = document.getElementById('progressBar');
 const label = document.getElementById('label');
 let barValue = parseInt(progressBar.style.width.slice(0, -1))
 
-window.setInterval(function(){
-  fetch('data.json')
+window.setInterval(function() {
+  fetch('./data.json', {
+    headers: {
+      'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json'
+    }
+  })
   .then((response) => response.json())
   .then((json) => {
       barValue = 0;
