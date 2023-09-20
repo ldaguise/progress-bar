@@ -34,3 +34,7 @@ html, body {
 .bg-success.progress-bar {
   background-color: #6fff80!important;
 }
+
+.label {
+  transition: all ease-in-out .5s;
+}

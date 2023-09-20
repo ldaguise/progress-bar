@@ -28,11 +28,21 @@ window.setInterval(function() {
         progressBar.classList.remove('bg-info');
         progressBar.classList.add('bg-success');
         progressBar.classList.remove('bg-info');
+
+        label.innerHTML = "SUCCESS !!"
+        label.style.color = '#6fff80';
+        label.style.fontWeight = 'bold';
+        label.style.fontSize = '3rem';
+
       } else {
         progressBar.classList.add('progress-bar-striped');
         progressBar.classList.add('bg-info');
         progressBar.classList.remove('bg-success');
         progressBar.classList.add('bg-info');
+
+        label.style.color = 'white';
+        label.style.fontWeight = 'normal';
+        label.style.fontSize = '2rem';
       }
     }
   );
